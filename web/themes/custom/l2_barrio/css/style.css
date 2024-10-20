@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+ 
+/*A conflict of the "placeholder" class between the kernel and bootstrap.*/
+/*@see https://www.drupal.org/project/bootstrap_barrio/issues/3228330*/
+.placeholder {
+    vertical-align: unset!important;
+    cursor: unset!important;
+    background-color: unset!important;
+    opacity: unset!important;
+  }

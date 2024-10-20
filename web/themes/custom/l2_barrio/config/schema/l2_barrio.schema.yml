@@ -1,0 +1,5 @@
+# Schema for the configuration files of the L2 Bootstrap Barrio Subtheme.
+
+l2_barrio.settings:
+  type: bootstrap_barrio.settings
+  label: 'L2 Bootstrap Barrio settings'
