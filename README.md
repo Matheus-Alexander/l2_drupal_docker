@@ -10,7 +10,17 @@ https://docs.google.com/document/d/1suu_15cHw0Dnr-mC3DUnr8kO78iXNH7hGHRyNyT5G24/
 ## Instalação
  1. Clone o repositório para sua máquina local.
  2. Entre na pasta raíz do repositório.
- 3. Rode o comando "make up".
+ 3. Rode o comando `make up`.
+ 4. Rode o comando `composer install`.
+ 5. Acesse o site pela URL http://drupal.docker.localhost:8000.
+
+## Credenciais
+O usuário admin do Drupal tem as credencias l2_admin:L2_password.
+
+As credenciais dos serviços do Docker Compose estão no arquivo .env.
+
+## Gerenciamento
+Rode o comando `make help` para mais informações sobre os comandos make.
 
 ## Cases
 
@@ -30,14 +40,20 @@ Para ver os cases já criados, navegue até http://drupal.docker.localhost:8000/
 A visualização dos cases foi feita utilizando a view cases_l2, acessível em http://drupal.docker.localhost:8000/admin/structure/views/view/cases_l2.
 
 A estilização dos cards na página foi feita utilizando um custom theme Bootstrap5, fields de conteúdo ocultos e um texto personalizado com padrões de substituição para o resgae das informações de cada Case.
+
 A paginação acontece à partir de 10 itens.
+
 A página está sendo cached através de um timer de 1h. 
 
 ## REST API
 
 A REST API foi criada utilizando o `drupal/rest_export` na view mencionada acima.
+
 Os filtros foram criados através de critérios de filtragem expostos para o REST resource.
+
 A REST API também tem um cache configurado na view timer-based de 1h.
+
+A REST API depende de autenticação Basic Auth com as credenciais de um usuário Drupal registrado.
 
 Acesse o Swagger da REST API: https://matheus-alexander.github.io/l2_drupal_docker.
 
