@@ -21,6 +21,9 @@ up:
 	@echo "Starting up containers for $(PROJECT_NAME)..."
 	docker compose pull
 	docker compose up -d --remove-orphans
+	sudo find . -type d -exec chmod a+rwx {} \; # Make folders traversable and read/write
+	sudo find . -type f -exec chmod a+rw {} \;  # Make files read/write
+
 
 .PHONY: mutagen
 mutagen:

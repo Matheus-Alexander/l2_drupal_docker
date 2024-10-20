@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1suu_15cHw0Dnr-mC3DUnr8kO78iXNH7hGHRyNyT5G24/
  1. Clone o repositório para sua máquina local.
  2. Entre na pasta raíz do repositório.
  3. Rode o comando `make up`.
- 4. Rode o comando `composer install`.
+ 4. Rode o comando `make composer install`.
  5. Acesse o site pela URL http://drupal.docker.localhost:8000.
 
 ## Credenciais
@@ -21,7 +21,7 @@ O usuário admin do Drupal tem as credencias l2_admin:L2_password.
 As credenciais dos serviços do Docker Compose estão no arquivo .env.
 
 ## Gerenciamento
-Rode o comando `make help` para mais informações sobre os comandos make.
+Rode o comando `make help` para mais informações sobre como gerenciar seu ambiente local.
 
 ## Cases
 
