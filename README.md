@@ -43,4 +43,4 @@ Acesse o Swagger da REST API: https://matheus-alexander.github.io/l2_drupal_dock
 
 ## Drupal
 O repositório foi criado utilizando Docker4Drupal.
-O banco de dados contendo a instalação Drupal está sendo carregado através no composer do serviço mariadb através da pasta ./mariadb-init.
+O banco de dados contendo a instalação Drupal está sendo carregado no compose do serviço mariadb através da pasta ./mariadb-init.

@@ -16,11 +16,13 @@ paths:
       operationId: export
       parameters:
         - name: titulo
+          description: Filtra os resultados baseado no campo Título dos cases no Drupal
           in: query
           schema:
             type: string
             example: 'Título do Case'
         - name: descricao
+          description: Filtra os resultados baseado no campo Descrição dos cases no Drupal
           in: query
           schema:
             type: string
@@ -29,7 +31,7 @@ paths:
         '200':
           description: 'Os dados foram exportados corretamente'
         '401':
-          description: 'Houve uma falha na autenticação. Verifique os cookies ou o header de Basic Auth.'
+          description: 'Houve uma falha na autenticação. Verifique o header de Basic Auth'
         '403':
           description: 'Houve uma falha na autorização. As credenciais são inválidas. A credencial default é l2_admin:L2_password'
 components:
