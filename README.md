@@ -1,5 +1,6 @@
 # Avaliação Técnica - L2
 Repositório criado para avaliação técnica da L2.
+
 https://docs.google.com/document/d/1suu_15cHw0Dnr-mC3DUnr8kO78iXNH7hGHRyNyT5G24/edit?tab=t.0
 
 ## Requerimentos
